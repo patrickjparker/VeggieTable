@@ -1,6 +1,6 @@
 ---
 navigation:
-  title: "Storing Leafy Greens"
+  title: "Leafy Greens"
 title: "Storing Leafy Greens"
 source_url: https://www.foodandwine.com/vegetables/how-to-store-any-vegetable
 source_title: "How to Store Vegetables to Maximize Freshness"
