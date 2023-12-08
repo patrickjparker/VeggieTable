@@ -16,7 +16,7 @@ defineEmits(["mouseenter"]);
       class="px-2 hover:bg-slate-200 h-full flex items-center"
       @mouseenter="$emit('mouseenter', link)"
     >
-      <NuxtLink :to="`/blog${link._path}`">
+      <NuxtLink :to="link._path">
         {{ link.title }}
       </NuxtLink>
     </li>
