@@ -2,8 +2,9 @@
 navigation:
   title: "Root Vegetables"
 title: "Storing Root Vegetables"
-source_url: https://www.foodandwine.com/vegetables/how-to-store-any-vegetable
-source_title: "How to Store Vegetables to Maximize Freshness"
+sources:
+  - title: "How to Store Vegetables to Maximize Freshness"
+    url: https://www.foodandwine.com/vegetables/how-to-store-any-vegetable
 ---
 
 # {{ $doc.title }}
@@ -24,6 +25,4 @@ Beets and celeriac also can be kept in a damp, clean towel in the fridge, minus 
 
 You don't have to throw away the greens you're removing, either — freeze them in a bag for stock or throw them into a greens-heavy sauce, like a pesto, salsa, or gremolata.
 
-::article-source{:url="source_url"}
-{{ $doc.source_title }}
-::
+:article-source{:sources="sources"}

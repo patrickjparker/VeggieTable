@@ -2,8 +2,9 @@
 navigation:
   title: "Broccoli and Cauliflower"
 title: "Storing Broccoli and Cauliflower"
-source_url: https://www.foodandwine.com/vegetables/how-to-store-any-vegetable
-source_title: "How to Store Vegetables to Maximize Freshness"
+sources:
+  - title: "How to Store Vegetables to Maximize Freshness"
+    url: https://www.foodandwine.com/vegetables/how-to-store-any-vegetable
 ---
 
 # {{ $doc.title }}
@@ -12,6 +13,4 @@ These similar-looking vegetables are both from the crucifer family and require s
 
 Broccoli and cauliflower are also great candidates for freezing. Just break them up into florets, put them on a sheet pan in the freezer, and then transfer them to a freezer bag once they're solidly frozen. Eat within six months for the best flavor.
 
-::article-source{:url="source_url"}
-{{ $doc.source_title }}
-::
+:article-source{:sources="sources"}

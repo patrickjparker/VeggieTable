@@ -1,16 +1,27 @@
 <script setup lang="ts">
+interface Source {
+  url: string;
+  title: string;
+}
+
 const props = defineProps({
-  url: {
-    type: String,
-    default: "",
+  sources: {
+    type: Array as PropType<Source[]>,
+    required: true,
   },
 });
 </script>
 
 <template>
-  <span class="p-2 font-thin text-sm"
-    >Source:
-    <ProseA :href="props.url"
-      ><ContentSlot :use="$slots.default" unwrap="p" /></ProseA
-  ></span>
+  <p class="p-2 font-thin text-sm">
+    Sources:
+    <ProseA
+      v-for="(source, index) in props.sources"
+      :key="index"
+      :href="source.url"
+      :class="{ 'block pl-2': props.sources.length > 1 }"
+    >
+      {{ source.title }}
+    </ProseA>
+  </p>
 </template>

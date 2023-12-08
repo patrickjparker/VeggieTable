@@ -2,8 +2,9 @@
 navigation:
   title: "Bell Peppers and Fresh Chiles"
 title: "Storing Bell Peppers and Fresh Chiles"
-source_url: https://www.foodandwine.com/vegetables/how-to-store-any-vegetable
-source_title: "How to Store Vegetables to Maximize Freshness"
+sources:
+  - title: "How to Store Vegetables to Maximize Freshness"
+    url: https://www.foodandwine.com/vegetables/how-to-store-any-vegetable
 ---
 
 # {{ $doc.title }}
@@ -12,6 +13,4 @@ If you're getting your cucumbers from the store, you probably don't have to wash
 
 Alternatively, you can store them for longer by turning cucumbers into [easy, spicy pickles](https://www.foodandwine.com/recipes/spicy-dill-quick-pickles).
 
-::article-source{:url="source_url"}
-{{ $doc.source_title }}
-::
+:article-source{:sources="sources"}

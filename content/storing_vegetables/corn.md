@@ -2,8 +2,9 @@
 navigation:
   title: "Corn"
 title: "Storing Corn"
-source_url: https://www.foodandwine.com/vegetables/how-to-store-any-vegetable
-source_title: "How to Store Vegetables to Maximize Freshness"
+sources:
+  - title: "How to Store Vegetables to Maximize Freshness"
+    url: https://www.foodandwine.com/vegetables/how-to-store-any-vegetable
 ---
 
 # {{ $doc.title }}
@@ -12,6 +13,4 @@ If you live near a cornfield or farm, you might be familiar with the school of t
 
 If you get the corn in a husk, keep it in there, and stick it in the fridge until you're ready to peel and cook it. If not, keep it wrapped in a plastic bag and enjoy it within a week. If you want to keep your corn for more long-term storage, you can freeze it. Just blanch the ears of corn by dunking them in a pot of boiling water for a minute or so, dry them thoroughly, and freeze the whole cobs. If you'd prefer, you can also strip the kernels off the cob after you blanch the corn and freeze just the kernels in a resealable freezer bag for up to a year.
 
-::article-source{:url="source_url"}
-{{ $doc.source_title }}
-::
+:article-source{:sources="sources"}

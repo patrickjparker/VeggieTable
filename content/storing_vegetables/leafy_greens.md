@@ -2,8 +2,9 @@
 navigation:
   title: "Leafy Greens"
 title: "Storing Leafy Greens"
-source_url: https://www.foodandwine.com/vegetables/how-to-store-any-vegetable
-source_title: "How to Store Vegetables to Maximize Freshness"
+sources:
+  - title: "How to Store Vegetables to Maximize Freshness"
+    url: https://www.foodandwine.com/vegetables/how-to-store-any-vegetable
 ---
 
 # {{ $doc.title }}
@@ -16,6 +17,4 @@ Some lettuces are hardier than others. Lettuce that comes in a head, like romain
 
 Also, Keep your lettuce away from fruits like apples, bananas, and avocados — they emit gases when they ripen that can hasten the demise of your lettuce.
 
-::article-source{:url="source_url"}
-{{ $doc.source_title }}
-::
+:article-source{:sources="sources"}

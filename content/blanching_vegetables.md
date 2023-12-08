@@ -17,6 +17,4 @@ For greens and most other veggies, blanch for two to three minutes before freezi
 4. Once cooled, shake dry and pat with paper towels to absorb excess water. This will help prevent freezer-burn.
 Note: There are a few exceptions, like bell peppers, celery and onions, for which blanching isn’t necessary before freezing.
 
-::article-source{:url="source_url"}
-{{ $doc.source_title }}
-::
+:article-source{:sources="sources"}
