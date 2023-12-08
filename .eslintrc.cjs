@@ -9,6 +9,8 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:vue/vue3-essential",
+    "@nuxtjs/eslint-config-typescript",
+    "prettier",
   ],
   overrides: [
     {
@@ -33,5 +35,6 @@ module.exports = {
     quotes: ["error", "double"],
     semi: ["error", "always"],
     "vue/multi-word-component-names": "off",
+    "@stylistic/js/comma-dangle": "off",
   },
 };

@@ -1,7 +1,5 @@
 <template>
   <div>
-    <h1 class="font-bold">Home</h1>
-    <UButton>Button</UButton>
-    <div>Here is something else</div>
+    <h1>Home page</h1>
   </div>
 </template>
