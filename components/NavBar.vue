@@ -1,36 +1,42 @@
 <script setup lang="ts">
-interface Directory {
-  title: string;
-  _path: string;
-  children: Directory[] | undefined;
-}
-
-const hoveredItem: Ref<null | Directory> = ref(null);
-
-const subNavigation = computed(() => {
-  if (!hoveredItem.value?.children) {
-    return [];
-  }
-  return hoveredItem.value.children.filter(
-    (item) => item._path !== hoveredItem.value?._path
-  );
-});
+const hoveredItem: Ref<null | Object> = ref(null);
 </script>
 
 <template>
   <div class="w-screen shadow-md z-10">
-    <nav class="flex justify-center w-full" @mouseleave="hoveredItem = null">
+    <nav class="flex justify-center w-full">
       <ContentNavigation v-slot="{ navigation }">
-        <Nav
-          class="h-12"
-          :navigation="navigation"
-          @mouseenter="(item) => (hoveredItem = item)"
-        />
-        <Nav
-          v-if="subNavigation.length > 0"
-          class="absolute w-full bg-white left-0 top-12 justify-center h-min-8 shadow-md"
-          :navigation="subNavigation"
-        />
+        <ul class="flex flex-wrap h-12">
+          <li
+            v-for="link of navigation"
+            :key="link._path"
+            class="h-full relative"
+            @mouseenter="hoveredItem = link"
+            @mouseleave="hoveredItem = null"
+          >
+            <NuxtLink
+              :to="link._path"
+              class="px-2 h-full hover:bg-slate-200 flex items-center"
+              @click="hoveredItem = null"
+            >
+              <span class="whitespace-nowrap">{{ link.title }}</span>
+            </NuxtLink>
+            <ul
+              v-if="link.children && hoveredItem === link"
+              class="absolute bg-white left-0 top-full shadow-md"
+            >
+              <li v-for="item of link.children" :key="item._path">
+                <NuxtLink
+                  :to="item._path"
+                  class="px-2 py-1 h-full hover:bg-slate-200 flex items-center"
+                  @click="hoveredItem = null"
+                >
+                  <span class="whitespace-nowrap">{{ item.title }}</span>
+                </NuxtLink>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </ContentNavigation>
       <slot />
     </nav>
