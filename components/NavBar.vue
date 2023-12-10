@@ -35,7 +35,7 @@ const filteredChildren = computed(() => {
           >
             <NuxtLink
               :to="link._path"
-              class="px-2 h-full hover:bg-slate-200 flex items-center"
+              class="px-2 h-full hover:bg-green-100 flex items-center"
               @click="hoveredItem = null"
             >
               <span class="whitespace-nowrap">{{ link.title }}</span>
@@ -47,7 +47,7 @@ const filteredChildren = computed(() => {
               <li v-for="item of filteredChildren" :key="item._path">
                 <NuxtLink
                   :to="item._path"
-                  class="px-3 py-1 h-full hover:bg-slate-200 flex items-center"
+                  class="px-3 py-1 h-full hover:bg-green-100 flex items-center"
                   @click="hoveredItem = null"
                 >
                   <span class="whitespace-nowrap">{{ item.title }}</span>
