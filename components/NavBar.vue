@@ -1,5 +1,24 @@
 <script setup lang="ts">
-const hoveredItem: Ref<null | Object> = ref(null);
+interface Link {
+  title: string;
+  _path: string;
+  children?: Link[];
+}
+
+const hoveredItem: Ref<null | Link> = ref(null);
+
+const filteredChildren = computed(() => {
+  if (!hoveredItem.value || !hoveredItem.value.children) {
+    return [];
+  } else {
+    const parentPath = hoveredItem.value._path;
+    return (
+      hoveredItem?.value?.children?.filter(
+        (child) => child._path !== parentPath
+      ) || []
+    );
+  }
+});
 </script>
 
 <template>
@@ -25,7 +44,7 @@ const hoveredItem: Ref<null | Object> = ref(null);
               v-if="link.children && hoveredItem === link"
               class="absolute bg-white left-0 top-full shadow-md"
             >
-              <li v-for="item of link.children" :key="item._path">
+              <li v-for="item of filteredChildren" :key="item._path">
                 <NuxtLink
                   :to="item._path"
                   class="px-2 py-1 h-full hover:bg-slate-200 flex items-center"
