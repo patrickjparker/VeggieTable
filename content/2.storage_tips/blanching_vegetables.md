@@ -1,7 +1,8 @@
 ---
 title: "Blanching Vegetables"
-source_url: https://www.washingtonpost.com/news/voraciously/wp/2020/03/22/how-to-freeze-fresh-vegetables-while-preserving-their-best-qualities/
-source_title: "How to freeze fresh vegetables while preserving their best qualities"
+sources:
+  - title: "How to freeze fresh vegetables while preserving their best qualities"
+    url: https://www.washingtonpost.com/news/voraciously/wp/2020/03/22/how-to-freeze-fresh-vegetables-while-preserving-their-best-qualities/
 ---
 
 # {{ $doc.title }}

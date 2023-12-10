@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <div class="p-16">
+  <div class="px-16 py-10">
     <ContentDoc>
       <template #not-found>
         <div class="flex flex-col items-center">

@@ -22,8 +22,8 @@ const filteredChildren = computed(() => {
 </script>
 
 <template>
-  <div class="w-screen shadow-md z-10">
-    <nav class="flex justify-center w-full">
+  <div class="shadow-md z-10">
+    <nav class="flex justify-center">
       <ContentNavigation v-slot="{ navigation }">
         <ul class="flex flex-wrap h-12">
           <li
@@ -42,12 +42,12 @@ const filteredChildren = computed(() => {
             </NuxtLink>
             <ul
               v-if="link.children && hoveredItem === link"
-              class="absolute bg-white left-0 top-full shadow-md"
+              class="absolute bg-white left-0 top-full shadow-md rounded-b-lg rounded-tr-lg"
             >
               <li v-for="item of filteredChildren" :key="item._path">
                 <NuxtLink
                   :to="item._path"
-                  class="px-2 py-1 h-full hover:bg-slate-200 flex items-center"
+                  class="px-3 py-1 h-full hover:bg-slate-200 flex items-center"
                   @click="hoveredItem = null"
                 >
                   <span class="whitespace-nowrap">{{ item.title }}</span>
