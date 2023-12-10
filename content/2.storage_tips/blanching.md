@@ -1,4 +1,6 @@
 ---
+navigation:
+  title: "Blanching Vegetables"
 title: "Blanching Vegetables"
 sources:
   - title: "How to freeze fresh vegetables while preserving their best qualities"
