@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center px-16 py-8">
-    <h1 class="font-title text-green-600 text-5xl p-8">VeggieTable</h1>
+    <h1 class="font-title text-primary text-5xl p-8">VeggieTable</h1>
     <div class="p-8">
       <p>
         <span class="font-bold">Hello</span> there fellow homecook! Are you
