@@ -19,6 +19,8 @@ const filteredChildren = computed(() => {
     );
   }
 });
+
+const route = useRoute();
 </script>
 
 <template>
@@ -35,7 +37,10 @@ const filteredChildren = computed(() => {
           >
             <NuxtLink
               :to="link._path"
-              class="px-2 h-full hover:bg-green-100 flex items-center"
+              :class="[
+                'px-2 h-full hover:bg-green-100 flex items-center',
+                { underline: route.fullPath.includes(link._path) },
+              ]"
               @click="hoveredItem = null"
             >
               <span class="whitespace-nowrap">{{ link.title }}</span>
@@ -47,7 +52,10 @@ const filteredChildren = computed(() => {
               <li v-for="item of filteredChildren" :key="item._path">
                 <NuxtLink
                   :to="item._path"
-                  class="px-3 py-1 h-full hover:bg-green-100 flex items-center"
+                  :class="[
+                    'px-3 py-1 h-full hover:bg-green-100 flex items-center',
+                    { underline: route.fullPath.includes(item._path) },
+                  ]"
                   @click="hoveredItem = null"
                 >
                   <span class="whitespace-nowrap">{{ item.title }}</span>
