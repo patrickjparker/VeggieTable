@@ -32,7 +32,7 @@ Veggies with a high-moisture content, such as cucumbers, cabbage, radishes, mush
 
 ## How to Freeze
 
-Most vegetables benefit from [blanching](storage_tips/freezing_veggies) before freezing.
+Most vegetables benefit from [blanching](/storage_tips/blanching) before freezing.
 
 Sheet pans are your best friend. Blanched leafy greens can be transferred right away to storage containers, but the ideal way to freeze all other vegetables is on a sheet pan. Spread them out in a single layer so that the pieces aren’t touching. Freeze until solid. Once frozen, the vegetables can be transferred to the storage container of your choice. The beauty in this method is that you’ll end up with individually frozen veggies and not a solid mass.
 

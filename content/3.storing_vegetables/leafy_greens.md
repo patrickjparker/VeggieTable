@@ -17,7 +17,7 @@ The best time to extend their life is as soon as you return from your grocery ru
 
 If you are going to leave your leafy greens in the bag. Make sure to put them in the fridge as soon as possible. Time left out is time exposed to ambient temperature which increases the risk of condensation in the bag. This condensation will cause the greens to wilt and rot faster.
 
-Some lettuces are hardier than others. Lettuce that comes in a head, like romaine or iceberg, can keep up to a couple of weeks in the fridge. To keep it fresh as long as you can, cut off the ends but otherwise leave it intact. Don't wash those suckers until you're ready to use them. Store them in a plastic bag with a paper towel stuffed inside. Put the bag in the [crisper drawer](/new_topic/crisper_drawer).
+Some lettuces are hardier than others. Lettuce that comes in a head, like romaine or iceberg, can keep up to a couple of weeks in the fridge. To keep it fresh as long as you can, cut off the ends but otherwise leave it intact. Don't wash those suckers until you're ready to use them. Store them in a plastic bag with a paper towel stuffed inside. Put the bag in the [crisper drawer](/storage_tips/crisper_drawer).
 
 Also, Keep your lettuce away from fruits like apples, bananas, and avocados — they emit gases when they ripen that can hasten the demise of your lettuce.
 

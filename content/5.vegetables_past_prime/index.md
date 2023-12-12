@@ -22,4 +22,4 @@ Unfortunately, there is a point of no return for vegetables but exactly when the
 If you spot any of these common signs, your food is no longer safe (or tasty) to eat.
 
 ## Specific Vegetables
-- [Leafy Greens](vegetables_past_prime/leafy_greens)
+- [Leafy Greens](/vegetables_past_prime/leafy_greens)
