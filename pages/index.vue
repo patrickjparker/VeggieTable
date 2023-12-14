@@ -33,35 +33,30 @@ const links = [
 </script>
 
 <template>
-  <div>
-    <div class="fixed -z-1 top-0 left-0 w-full h-full overflow-clip">
-      <NuxtImg src="images/main.jpg" fit="outside" proload class="w-full" />
+  <div class="background h-full flex flex-col items-center px-16 py-8">
+    <div class="background-box flex flex-col items-center p-8">
+      <h1 class="font-title text-primary text-9xl">VeggieTable</h1>
+      <p class="pt-8 text-4xl">
+        Make the <span class="font-bold">most</span> of your vegetables!
+      </p>
     </div>
-    <div class="flex flex-col items-center px-16 py-8">
-      <div class="background-box flex flex-col items-center p-8">
-        <h1 class="font-title text-primary text-9xl">VeggieTable</h1>
-        <p class="pt-8 text-4xl">
-          Make the <span class="font-bold">most</span> of your vegetables!
-        </p>
-      </div>
-      <div class="background-box flex flex-col items-center p-8 mt-8">
-        <p class="text-2xl">Learn about:</p>
-        <ul class="flex flex-wrap justify-center w-full p-4 space-x-2">
-          <li
-            v-for="link of links"
-            :key="link._path"
-            class="category-button shadow-md hover:shadow-xl rounded-md mb-2"
+    <div class="background-box flex flex-col items-center p-8 mt-8">
+      <p class="text-2xl">Learn about:</p>
+      <ul class="flex flex-wrap justify-center w-full p-4 space-x-2">
+        <li
+          v-for="link of links"
+          :key="link._path"
+          class="category-button shadow-md hover:shadow-xl rounded-md mb-2"
+        >
+          <NuxtLink
+            class="h-full w-full flex justify-center items-center p-2"
+            :to="link._path"
           >
-            <NuxtLink
-              class="h-full w-full flex justify-center items-center p-2"
-              :to="link._path"
-            >
-              <Icon :name="link.icon" class="w-8 h-8 m-2" />
-              {{ link.title }}
-            </NuxtLink>
-          </li>
-        </ul>
-      </div>
+            <Icon :name="link.icon" class="w-8 h-8 m-2" />
+            {{ link.title }}
+          </NuxtLink>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -69,6 +64,12 @@ const links = [
 <style scoped>
 .background-box {
   background: rgba(249, 249, 249, 0.88);
+  background-repeat: no-repeat;
+}
+
+.background {
+  background-image: url(/images/main.jpg);
+  background-size: 100%;
 }
 
 .category-button {
