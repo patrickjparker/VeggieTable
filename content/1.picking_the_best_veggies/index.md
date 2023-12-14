@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Smart Veggie Shopping"
-title: "Smart Veggie Shopping"
+  title: "Picking the Best Veggies"
+title: "Picking the Best Veggies"
 ---
 
 # {{ $doc.title }}

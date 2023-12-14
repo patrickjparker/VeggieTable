@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         title: ["Grandstander", "serif"],
+        body: ["Open Sans", "sans-serif"],
+        "body-alt": ["Nunito", "sans-serif"],
       },
       colors: {
         primary: "#248501",
@@ -17,6 +19,9 @@ export default {
         light: "#F9F9F9",
         "light-green": "#E2E9E2",
         brown: "#E5E3DC",
+      },
+      zIndex: {
+        "-1": "-1",
       },
     },
   },

@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Vegetables Past Prime"
-title: "Vegetables Past their Prime"
+  title: "Spotting Spoilage"
+title: "Spotting Spoilage"
 source:
   - title: "How to Cook With Wilted Vegetables and Prevent Food Waste"
     url: https://www.foodandwine.com/cooking-techniques/how-to-cook-wilted-produce-avoid-food-waste-vegetables
@@ -22,4 +22,4 @@ Unfortunately, there is a point of no return for vegetables but exactly when the
 If you spot any of these common signs, your food is no longer safe (or tasty) to eat.
 
 ## Specific Vegetables
-- [Leafy Greens](/vegetables_past_prime/leafy_greens)
+- [Leafy Greens](/spotting_spoilage/leafy_greens)

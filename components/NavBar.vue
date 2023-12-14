@@ -24,7 +24,7 @@ const route = useRoute();
 </script>
 
 <template>
-  <div class="shadow-md z-10">
+  <div class="bg-light shadow-md z-10">
     <nav class="flex justify-between">
       <div class="w-0 px-4 flex items-center">
         <NuxtLink class="font-title text-primary text-2xl" to="/">
@@ -32,7 +32,7 @@ const route = useRoute();
         </NuxtLink>
       </div>
       <ContentNavigation v-slot="{ navigation }">
-        <ul class="flex flex-wrap h-12">
+        <ul class="flex flex-wrap h-16">
           <li
             v-for="link of navigation"
             :key="link._path"

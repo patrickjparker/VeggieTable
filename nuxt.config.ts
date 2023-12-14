@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxtjs/eslint-module",
     "@nuxt/content",
+    "@nuxt/image",
     [
       "@nuxtjs/google-fonts",
       {
@@ -12,10 +13,15 @@ export default defineNuxtConfig({
           Grandstander: {
             wght: "500",
           },
+          "Open Sans": {
+            wght: "500;700",
+          },
+          Nunito: {
+            wght: "400;700",
+          },
         },
         text: "VeggieTable",
       },
     ],
   ],
-  css: ["@fortawesome/fontawesome-svg-core/styles.css"],
 });
