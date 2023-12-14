@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Picking Good Mushrooms"
-title: "Picking Good Mushrooms"
+  title: "Mushrooms"
+title: "Mushrooms"
 sources:
   - title: "How to Clean and Store Mushrooms: A Step-by-Step Guide"
     url: https://www.foodnetwork.com/how-to/articles/how-to-clean-and-store-mushrooms-a-step-by-step-guide

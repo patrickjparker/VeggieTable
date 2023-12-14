@@ -6,7 +6,7 @@ title: "Storing Specific Vegetables"
 
 # {{ $doc.title }}
 
-This section covers storing specific vegetables. For general tips, see....
+This section covers storing specific vegetables. For general tips, see the [General Storage Tips](/general_storage_tips) section.
 
 Vegetables covered:
 - [Asparagus](/storing_specific_veggies/asparagus)
