@@ -35,7 +35,7 @@ const links = [
 <template>
   <div>
     <div class="fixed -z-1 top-0 left-0 w-full h-full overflow-clip">
-      <NuxtImg src="images/main.jpg" fit="outside" proload />
+      <NuxtImg src="images/main.jpg" fit="outside" proload class="w-full" />
     </div>
     <div class="flex flex-col items-center px-16 py-8">
       <div class="background-box flex flex-col items-center p-8">
