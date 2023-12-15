@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen flex flex-col">
-    <NavBar />
+    <NavBar :show-icons="false" />
     <div class="flex-grow">
       <slot />
     </div>

@@ -33,7 +33,7 @@ const links = [
 </script>
 
 <template>
-  <div class="background h-full flex flex-col items-center px-16 py-8">
+  <div class="background h-full flex flex-col items-center p-16">
     <div class="background-box flex flex-col items-center p-8">
       <h1 class="font-title text-primary text-9xl">VeggieTable</h1>
       <p class="pt-8 text-4xl">

@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Storing Specific Vegetables"
-title: "Storing Specific Vegetables"
+  title: "Storing Specific Veggies"
+title: "Storing Specific Veggies"
 ---
 
 # {{ $doc.title }}
